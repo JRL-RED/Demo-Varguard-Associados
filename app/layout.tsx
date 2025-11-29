@@ -17,6 +17,10 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = {
   title: "VANGUARD & ASSOCIADOS | Advocacia com Garra e Tecnologia",
   description: "Sua aliada jurídica para o progresso. Advocacia moderna, transparente e ágil.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({

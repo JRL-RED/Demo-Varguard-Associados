@@ -3,12 +3,22 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-source-serif);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   --color-gold: #C5A059;
   --color-gold-light: #D4B475;
   --color-gold-dark: #A38240;
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-source-serif), serif !important;
+    font-optical-sizing: auto;
+  }
+}
+
+:root {
+  font-optical-sizing: auto;
 }
 
 :root {

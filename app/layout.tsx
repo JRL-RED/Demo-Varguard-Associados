@@ -10,8 +10,8 @@ const inter = Inter({
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
   subsets: ["latin"],
-  weight: "400", // Using 400 as closest standard weight, or we can try to force it if needed, but next/font is safer
   style: ['normal', 'italic'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
